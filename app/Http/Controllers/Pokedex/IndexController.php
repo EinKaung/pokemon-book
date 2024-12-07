@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Pokemon;
+namespace App\Http\Controllers\Pokedex;
 
 use App\Http\Controllers\Controller;
 use App\Models\Pokemon;
@@ -14,7 +14,8 @@ class IndexController extends Controller
     public function __invoke(Request $request)
     {
         $pokemons = Pokemon::all();
-        return view('pokemon.index')
+        return view('pokedex.index')
             ->with('pokemons', $pokemons);
     }
 }
+

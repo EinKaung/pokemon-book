@@ -17,4 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/pokemons', \App\Http\Controllers\Pokemon\IndexController::class);
+Route::get('/pokedex', \App\Http\Controllers\Pokedex\IndexController::class);

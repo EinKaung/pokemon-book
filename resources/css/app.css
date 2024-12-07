@@ -28,7 +28,7 @@ html {
 body {
     margin: 0;
     line-height: inherit;
-    background-color: rgb(37, 37, 37);
+    background-color: rgb(10, 10, 10);
 }
 
 hr {
@@ -157,15 +157,45 @@ video {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .item {
+    margin: 4px;
+    width: 120px;
+    align-items: center ;
+}
+
+.desc {
+    margin-bottom: 2px;
+    padding-left: 5px;
+}
+
+.green_font {
+    color: rgb(60, 172, 110);
+}
+
+#Pokedex_title {
+    font: 2.5rem sans-serif;
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+#pokemon_image {
     background-color: rgb(252, 252, 252);
     border-radius: 10px;
     padding: 10px;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+}
 
+#pokemon_name {
+    height: 24px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 /* :-moz-focusring {

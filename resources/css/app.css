@@ -198,6 +198,28 @@ video {
     overflow: hidden;
 }
 
+/* デフォルトで非表示になっているポップアップポケモン表示 */
+.pokemon-popup {
+    display: none;
+    margin: auto;
+    padding: 15px;
+    max-width: fit-content;
+    background-color: white;
+    border-radius: 20px;
+    border: 3px solid #504f4f;
+    z-index: 9;
+    position: fixed;
+    top: 35vh;
+    left: 40vw;
+  }
+
+/* ポケモン表示フォーマット */
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 /* :-moz-focusring {
     outline: auto
 }

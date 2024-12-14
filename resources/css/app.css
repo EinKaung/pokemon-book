@@ -120,7 +120,7 @@ select {
 [type=submit],
 button {
     background-color: transparent;
-    background-image: none
+    background-image: none;
 }
 
 menu,
@@ -162,12 +162,12 @@ video {
 }
 
 .item {
-    margin: 4px;
+    margin: 6px 4px 4px 4px;
     width: 120px;
     align-items: center ;
 }
 
-.desc {
+.description {
     margin-bottom: 2px;
     padding-left: 5px;
 }
@@ -179,17 +179,21 @@ video {
 #Pokedex_title {
     font: 2.5rem sans-serif;
     font-weight: bold;
-    margin: 10px;
+    margin: 10px 10px 8px;
 
 }
 
-#pokemon_image {
+#pokemon-thumbnail {
     background-color: rgb(252, 252, 252);
     border-radius: 10px;
     padding: 10px;
     height: 120px;
     align-items: center;
     justify-content: center;
+}
+
+#pokemon-thumbnail:hover {
+    background-color: cadetblue;
 }
 
 #pokemon_name {
@@ -199,22 +203,22 @@ video {
 }
 
 /* デフォルトで非表示になっているポップアップポケモン表示 */
-.pokemon-popup {
-    display: none;
+#pokemon-popup {
+    display: block;
     margin: auto;
     padding: 15px;
     max-width: fit-content;
-    background-color: white;
+    background-color: rgb(10, 10, 10);
     border-radius: 20px;
-    border: 3px solid #504f4f;
+    border: 3px solid rgb(60, 172, 110);
     z-index: 9;
     position: fixed;
     top: 35vh;
-    left: 40vw;
+    left: 45vw;
   }
 
 /* ポケモン表示フォーマット */
-.pokemon-container {
+#pokemon-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

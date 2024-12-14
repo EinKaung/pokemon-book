@@ -13,8 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/pokedex', \App\Http\Controllers\Pokedex\IndexController::class);
+Route::get('/', \App\Http\Controllers\Pokedex\IndexController::class);

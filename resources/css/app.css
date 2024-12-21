@@ -1,6 +1,10 @@
-@import 'tailwindcss/base';
+/* @import 'tailwindcss/base';
 @import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import 'tailwindcss/utilities'; */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 *,
 ::after,
@@ -183,7 +187,7 @@ video {
 
 }
 
-#pokemon-thumbnail {
+.pokemon-thumbnail {
     background-color: rgb(252, 252, 252);
     border-radius: 10px;
     padding: 10px;
@@ -192,7 +196,7 @@ video {
     justify-content: center;
 }
 
-#pokemon-thumbnail:hover {
+.pokemon-thumbnail:hover {
     background-color: cadetblue;
 }
 
@@ -203,7 +207,7 @@ video {
 }
 
 /* デフォルトで非表示になっているポップアップポケモン表示 */
-#pokemon-popup {
+.pokemon-popup {
     display: block;
     margin: auto;
     padding: 15px;
@@ -218,7 +222,7 @@ video {
   }
 
 /* ポケモン表示フォーマット */
-#pokemon-container {
+.pokemon-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

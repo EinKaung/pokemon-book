@@ -26,7 +26,7 @@ class IndexController extends Controller
         if (!$pokemon) {
             return redirect()->route('pop_up')->with('error', 'ポケモンが見つかりません。');
         }
-        return view('pokedex.pop_up', compact('pokemon'));
+        return view('components.popup', compact('pokemon'));
     }
 }
 

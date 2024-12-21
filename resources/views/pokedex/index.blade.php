@@ -3,7 +3,7 @@
     <x-list :pokemons="$pokemons"></x-list>
     <div id="pokemonModal"
         class="fixed inset-0 z-50 hidden bg-black bg-opacity-50 flex justify-center items-center border-green-500">
-        <div class="bg-black rounded-lg p-4 w-full max-w-screen-md mx-auto relative">
+        <div class="bg-black text-green-500 rounded-lg p-4 w-full max-w-screen-md mx-auto relative">
             <img src="{{ asset('storage/close-icon.svg') }}" id="closeModal"
                 class="absolute top-2 right-2 w-6 h-6 cursor-pointer">
             <div id="modalContent"></div>

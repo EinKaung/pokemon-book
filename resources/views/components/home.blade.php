@@ -1,6 +1,3 @@
-@props([
-    'pokemons' => [],
-])
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -10,8 +7,9 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>Pokédex</title>
 </head>
-<body>
-    <x-title></x-title>
-    <x-list :pokemons="$pokemons"></x-list>
+<body class="bg-black text-green">
+    <main>
+        {{ $slot }}
+    </main>
 </body>
 </html>

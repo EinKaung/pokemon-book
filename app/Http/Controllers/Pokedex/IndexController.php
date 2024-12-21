@@ -17,5 +17,16 @@ class IndexController extends Controller
         return view('pokedex.index')
             ->with('pokemons', $pokemons);
     }
+
+    public function show($id)
+    {
+        // idでポケモンを取得する
+        $pokemon = Pokemon::find($id);
+
+        if (!$pokemon) {
+            return redirect()->route('pop_up')->with('error', 'ポケモンが見つかりません。');
+        }
+        return view('pokedex.pop_up', compact('pokemon'));
+    }
 }
 

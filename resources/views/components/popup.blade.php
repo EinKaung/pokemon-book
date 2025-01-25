@@ -1,11 +1,3 @@
-{{-- @props([
-    'pokemon'
-]) --}}
-{{-- <div class="pokemon-popup">
-    <div class="pokemon-container">
-        <x-title :title="$pokemon->id"></x-title>
-    </div>
-</div> --}}
 <div id="pokemonModal">
     <div class="container p-4 flex flex-wrap justify-center items-center gap-8">
         <div class="mb-8">

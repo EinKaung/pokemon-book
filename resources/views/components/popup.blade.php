@@ -15,9 +15,9 @@
             </p>
             <div class="flex flex-wrap">
                 <img src="{{ $pokemon['front_default'] }}"
-                class="size-min md:w-40 lg:w-80">
+                class="size-min md:w-60 lg:w-80">
                 <img src="{{ $pokemon['back_default'] }}"
-                class="size-min md:w-40 lg:w-80">
+                class="size-min md:w-60 lg:w-80">
             </div>
 
         </div>

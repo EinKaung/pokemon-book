@@ -13,7 +13,7 @@
                 </div>
             </div>
             <button class="pokemon-thumbnail" data-pokemon-id="{{ $pokemon['id'] }}">
-                <img src="{{ $pokemon['front_default'] }}" alt="">
+                <img src="{{ $pokemon['official_artwork_front_default'] }}" alt="">
             </button>
         </li>
     @endforeach

@@ -13,11 +13,15 @@
                     / {{ $pokemon->type2 }}
                 @endif
             </p>
-            <div class="flex flex-wrap">
-                <img src="{{ $pokemon['front_default'] }}"
-                class="size-min md:w-60 lg:w-80">
-                <img src="{{ $pokemon['back_default'] }}"
-                class="size-min md:w-60 lg:w-80">
+            <div class="content-center">
+                <img src="{{ $pokemon['official_artwork_front_default'] }}"
+                    class="md:w-48 lg:w-48 border border-gray-300 rounded-lg shadow-md bg-white">
+                <div class="flex flex-wrap">
+                    <img src="{{ $pokemon['front_default'] }}"
+                        class="md:w-24 lg:w-24">
+                    <img src="{{ $pokemon['back_default'] }}"
+                        class="md:w-24 lg:w-24">
+                </div>
             </div>
 
         </div>
